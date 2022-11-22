@@ -372,9 +372,16 @@ header nav .act{
 /* SERVICE RANGE */
 #service-range{ 
   justify-content: center;
+}  
+#service-range .service-card .service-card__icon img{ 
+  width: 50px;
+  transition: .5s;
 } 
 #service-range .service-card:hover .service-card__icon{ 
   background-color: unset;
+} 
+#service-range .service-card:hover .service-card__icon img{ 
+  width: unset;
 } 
 
 /* #service-range .service-card__content__inner{
