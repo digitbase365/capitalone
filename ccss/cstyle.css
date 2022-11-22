@@ -245,7 +245,7 @@ header nav .act{
   .menu .burger::after{
     width: 27px;
     height: 2.5px; 
-    background-color: #85bb65;
+    background-color: #54bcff;
     border-radius: 10px;
     position: relative;
     transition: all .5s ease-in-out; 
@@ -338,11 +338,26 @@ header nav .act{
 
   /* End of Mobile Navigation */
    
-}
-
-
+} 
 
 /* END of MOBILE HEADER Ruleset ****************************************/
+
+ /* HERO MOBILE RULESET *************************************************/
+ @media screen and (max-width: 499px){
+  .slider-one__item .slider-one__image{
+    background-position: center center;
+  }
+  section.page-header{
+    /* display: none; */
+  }
+  section.page-header .page-header__bg{
+    background-position: top right;
+  }
+  .slider-one__tagline{
+    font-size: .75rem;
+  }
+ }
+ 
 
 /* SERVICE RANGE */
 #service-range{ 
@@ -493,6 +508,7 @@ form textarea.input{
   resize: none;
   overflow-y: auto;
 }
+
 form .input-container label{
   position: absolute;
   top: 50%;
@@ -509,7 +525,7 @@ form .input-container label{
 form .input-container.textarea label{ 
   transform: translateY(-50%);
 }
-form .subm-btn{
+.form-apply form #submit.subm-btn{
   padding: .45em 1.5em;
   background-color: #fff;
   border: 2px solid #fafafa;
@@ -521,7 +537,7 @@ form .subm-btn{
   cursor: pointer;
   transition: .3s;
 }
-form .subm-btn:hover{
+.form-apply form #submit.subm-btn:hover{
   background-color: transparent;
   color: #fff;
 }
@@ -629,49 +645,37 @@ form .subm-btn:hover{
   }
 }
 
-@media screen and (max-width: 480px){ 
+@media screen and (max-width: 499px){ 
+  div#form-wrapper{
+    padding: 0;
+  }
   .form-apply{ 
-    padding: 2em .5em;  
+    padding: 2em 0;  
+  }
+  .form-apply form#cform{
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .form-apply .contact-info::before{
     display: none;
   }
-  .form-apply .square,
-  .form-apply .big-circle{
-    display: none;
-  }
-
-  .form-apply form,
-  .form-apply .contact-info{
-    padding: 2em 1em; 
-  }
-  .form-apply .social-media{
-    padding: 2em 0 0 0;
-  }
-  .form-apply .text,
-  .form-apply .information,
-  .form-apply .social-media p{
-    font-size: 0.8rem; 
-  }
-  .form-apply .title{
-    font-size: 1.15rem;
-  }
-  .form-apply .social-icon a{
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-  }
-
-  .form-apply .icon{
-    width: 23px;
-
-  }
+  
   .form-apply form .input-container .input{
-    padding: .45em 1.2em;
+    padding: .45em 1.2em; 
+  }
+  .form-apply form .input-container .dob{
+    font-size: .75rem;
   }
   .form-apply .subm-btn{
     padding: .45em 2.2em;
   }
+
+  form .input-container{
+    flex-basis: 100%;
+    gap: 1%;
+    position: relative;
+    margin: 1em 0; 
+  } 
 }
 /* ***********End of Contact Section Ruleset*************** */
 
