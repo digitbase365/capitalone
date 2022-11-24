@@ -1,4 +1,13 @@
-  
+/* PRE-Loader  */
+/* #preluder .preloader__image{
+  width: 100vw;
+}
+  #preluder .preloader__image img{
+    border: 2px solid violet;
+    width: 100% !important;
+    height: 100% !important;
+} */
+
 /* HEADER Ruleset */
 header{  
   width: 100%; 
@@ -12,7 +21,6 @@ header{
   top: 0;
   left: 0; 
   transition: all 300ms ease-in-out;  
-  padding-top: 1%;
   padding-left: 0;
   padding-right: 0; 
 } 
@@ -153,6 +161,7 @@ header nav .act{
   filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
   background-color: #fff;    
   box-shadow: 2px 0 3px rgba(0, 0, 0, 0.5); 
+  padding-top: .39%;
 }
 .scroll-up header nav a{
   color: #031a48;
@@ -185,6 +194,8 @@ header nav .act{
     background-color: #fff;
     padding: unset;  
     height: 7vh;
+    padding-top: .69%;
+
   } 
   header .container{   
     width: 100%;  
@@ -395,8 +406,10 @@ header nav .act{
 /* TEST FORM */
 /* ***********Contact Section Ruleset*************** */
  
+ 
 section#form-c{
-  background-color: #fff;
+  background-color: #fff; 
+  background: url(../wp-content/uploads/2022/07/faq-form-bg-1-1.png);
 }
 .form-apply{
   background-color: #00adbb; 
