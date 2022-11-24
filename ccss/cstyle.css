@@ -31,7 +31,7 @@
 html body p{
   font-family: 'Source Sans Pro', sans-serif !important;  
 }
-#heros h2{
+section#heros h2.slider-one__title{
   font-family: 'Rosario', sans-serif; 
   font-weight: 600;
 }
